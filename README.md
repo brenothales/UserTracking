@@ -7,7 +7,7 @@ Tool developed to monitor and track visits to a particular site, built with Ruby
 Git clone the application:
 
 ```console
-https://github.com/brenothales/UserTracking
+git clone https://github.com/brenothales/UserTracking.git
 ```
 
 Change to application directory:
@@ -48,9 +48,6 @@ http://localhost:3000/
 ```
 Click links 'Home' 'Contato' 'Sobre' at the navbar and finally click 'Relatório de Rastremaneto' to get the user's visit tracking report.
 
-### Optional Execution of Sidekiq
-
-If the application is configured to use Sidekiq you must start it with:
 
 ```console
 bundle exec sidekiq
@@ -63,7 +60,7 @@ Run the rspec command on the application folder:
 ```console
 rspec
 ```
-#Frontend
+#Front-end
 
 Front-end is a simple website, according to the parameters of the W3C, while the visitor is web-surfing the sessions of cookies is being recorded and sent to the server. To know the tool click the https://landpages.herokuapp.com/
 
@@ -74,7 +71,7 @@ Front-end is a simple website, according to the parameters of the W3C, while the
 
 ![alt tag](https://github.com/brenothales/UserTracking/blob/master/app/assets/images/4.png?raw=true)
 
-#Backend
+#Back-end
 
 Back-end é todo desenvolvido em Ruby on Rails e você pode acessa pelo link  https://landpages.herokuapp.com/
 
