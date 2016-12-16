@@ -73,7 +73,7 @@ Front-end is a simple website, according to the parameters of the W3C, while the
 
 #Back-end
 
-Back-end é todo desenvolvido em Ruby on Rails e você pode acessa pelo link  https://landpages.herokuapp.com/
+Back-end é todo desenvolvido em Ruby on Rails e você pode acessa pelo link  https://landpages.herokuapp.com/rastreamentos
 
 ![alt tag](https://github.com/brenothales/UserTracking/blob/master/app/assets/images/2.png?raw=true)
 ### Considerations
