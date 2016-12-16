@@ -7,7 +7,7 @@ Tool developed to monitor and track visits on a given site, built with Ruby on R
 Git clone the application:
 
 ```console
-https://github.com/brenothales/UserTracking.
+https://github.com/brenothales/UserTracking
 ```
 
 Change to application directory:
@@ -56,12 +56,6 @@ If the application is configured to use Sidekiq you must start it with:
 bundle exec sidekiq
 ```
 
-You can monitor the default queue at the address:
-
-```console
-http://localhost:3000/sidekiq
-```
-
 ##Testing the application
 
 Run the rspec command on the application folder:
@@ -69,3 +63,13 @@ Run the rspec command on the application folder:
 ```console
 rspec
 ```
+## Screenshot
+![alt tag](https://github.com/brenothales/UserTracking/blob/master/app/assets/images/1.png?raw=true)
+
+![alt tag](https://github.com/brenothales/UserTracking/blob/master/app/assets/images/2.png?raw=true)
+
+![alt tag](https://github.com/brenothales/UserTracking/blob/master/app/assets/images/3.png?raw=true)
+
+![alt tag](https://github.com/brenothales/UserTracking/blob/master/app/assets/images/4.png?raw=true)
+### Considerations
+At first I had a lot of difficulties to start, but a few hours of research I think I got the relatively expected result
