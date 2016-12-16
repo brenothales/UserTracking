@@ -9,6 +9,7 @@
 .logoicon-resultados{
 	color:#98b0c1;
 }
+
 .logoicon-digitais{
 	font-weight: 100;
 }
@@ -53,4 +54,11 @@
 
 .w3-border-teal{
     border-color: #ffc107!important;
+}
+
+.logoicon-resultadosblack {
+    color: black !important;
+}
+.logoicon-digitaiswhite{
+    color:white;
 }
