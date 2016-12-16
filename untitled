@@ -13,7 +13,7 @@ https://github.com/brenothales/UserTracking.
 Change to application directory:
 
 ```console
-cd UserTracking
+cd app_rastreamento_usuarios
 ```
 
 Run the following command to install dependencies:
@@ -28,10 +28,23 @@ Create a development database:
 rake db:migrate RAILS_ENV=development
 ```
 
+### Optional Installation of Redis
+
+The application can be used with Sidekiq / Redis for performance proof of concept. If you choose to use this option (see configuration bellow) you must install Redis:
+
+```console
+brew install redis
+```
+
 ##Configuration
 
 The solution comes with a config/application.yml file with a default configuration:
 
+```ruby
+USE_SIDEKIQ: no
+```
+
+Switch this option to 'yes' if you want to run Sidekiq / Redis performance proof of concept.
 
 ##Running the application
 
