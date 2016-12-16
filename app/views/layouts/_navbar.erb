@@ -1,0 +1,7 @@
+<% content_for :navbar_list do %>
+    <li id="contato"><%= link_to "Contato", new_contato_path %></li>
+    <li id="relatorio"><%= link_to "Relatório de Rastreamento", rastreamentos_path %></li>
+<% end %>
+
+<%= render :partial => 'layouts/header',
+           :locals => {id: id} %>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>Sobre RD Station</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-blue w3-card-2 w3-left-align w3-large">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    </li>
+    <li>
+      <a href="/" class="w3-padding-large w3-hover-white">Home</a>
+    </li>
+    <li class="w3-hide-small">
+      <a href="contact.html" class="w3-padding-large  w3-hover-white">Contato</a>
+    </li>
+    <li class="w3-hide-small">
+      <a href="about.html" class="w3-padding-large w3-white">Sobre</a>
+    </li>
+    <li class="w3-hide-small">
+      <a href="dev.html" class="w3-padding-large">Aplicação</a>
+    </li>
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-left-align w3-large w3-black">
+      <li><a class="w3-padding-large" href="/">Início</a></li>
+      <li><a class="w3-padding-large" href="contact.html">Contato</a></li>
+      <li><a class="w3-padding-large" href="about.html">Sobre</a></li>
+      <li><a class="w3-padding-large" href="dev.html">Aplicação</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center w3-padding-128">
+  <h1 class="w3-margin w3-jumbo">RESULTADOS DIGITAIS</h1>
+  <p class="w3-xlarge">Desafio - Rastreamento de usuários </p>
+  <button class="w3-btn w3-padding-16 w3-large w3-margin-top">conheça o poder do marketing</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Estratégia</h1>
+      <h5 class="w3-padding-32">Uma das maneiras de identificarmos potenciais clientes é verificando onde os visitantes do nosso site acessam e buscam informações. Dado que um dos clientes do RD Station possua um software no modelo SaaS e a atração de seus clientes é principalmente feita pelo seu site, um visitante que acessa a página de informações do produto, depois a página de preços e por fim a página de contato, está mais propenso a se tornar um cliente do que um visitante que acessou apenas a página inicial.</h5>
+
+      <p class="w3-text-grey">Desenvolver uma aplicação web em Ruby que contenha uma lista de contatos. Deve obrigatoriamente conter o campo email. Sugestão de framework: Sinatra ou Rails.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa icon fa-users w3-padding-64 w3-text-blue"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-mobile icon w3-padding-64 w3-text-blue w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Aplicação</h1>
+      <h5 class="w3-padding-32">Foi utilizado a última versão estável do Rails 4.2.5.1, com componentes do Bootstrap 3.3.6 e Simple Form 3.2.1.
+Foi desenvolvido uma biblioteca JS chamada rastreamento.js que é carregada nas páginas e envia as seguintes informações para a aplicação em formato JSON:</h5>
+      <p class="w3-text-grey">Web Site com as páginas home, contato e sobre estão no diretório public e são independente da aplicação, o projeto esta hospedado no heroku e os repositórios estão público no github</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Junte-se a milhares de pessoas que acompanham e recomendam</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+   <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+   <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+   <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+ </div>
+ <p>Breno Thales <a href="http://github.com/brenothales" target="_blank">github/brenthales</a></p>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/rastreamento.js"></script>
+<script>
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

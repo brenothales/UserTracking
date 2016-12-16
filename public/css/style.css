@@ -1,0 +1,56 @@
+.w3-rd {
+    color: #fff;
+    background-color: #506e84 !important;
+}
+.w3-rb:hover {
+    color: #fff;
+    background-color: #506e84!important;
+}
+.logoicon-resultados{
+	color:#98b0c1;
+}
+.logoicon-digitais{
+	font-weight: 100;
+}
+.w3-text-rd{
+	color: #506e84;
+}
+.w3-yellow {
+    color: #fff;
+    background-color: #ffc107 !important;
+}
+.w3-yellow:hover {
+    color: #fff;
+    background-color: #ffc107!important;
+}
+.w3-text-yellow{
+    color: #ffc107 !important;
+}
+
+.w3-blue{
+	color: #fff;
+	background-color: #0277bd;
+}
+
+.w3-blue:hover{
+	color: #fff;
+	background-color: #0277bd;
+}
+
+.w3-text-blue{
+	color: #0277bd;
+}
+
+.w3-padding-botton-32{
+	padding-bottom: 34px;
+    border-bottom: #506e84 1px solid;
+    margin-bottom: 34px;
+}
+
+.icon{
+	font-size: 200px !important;
+}
+
+.w3-border-teal{
+    border-color: #ffc107!important;
+}

@@ -1,0 +1,49 @@
+<% title "Relatório de Rastreamento" %>
+
+<% content_for :stylesheet do %>
+<% end %>
+
+<% content_for :header do %>
+    <%= render :partial => 'layouts/navbar', :locals => {id: :relatorio} %>
+<% end %>
+
+<div class="container" style="padding-top: 70px;">
+  <h1>Lista os últimos <%= @rastreamentos.count %> acessos rastreados</h1>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-info">
+        <div class="panel-heading clearfix">
+          <h3 class="panel-title pull-left">Acessos Rastreados</h3>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>Visitante</th>
+                <th>URL visitada</th>
+                <th>Título da Janela</th>
+                <th>Data/Hora</th>
+              </tr>
+              </thead>
+              <tbody>
+              <% @rastreamentos.each do |rastreamento| %>
+                  <tr>
+                    <td><%= rastreamento.visitante %></td>
+                    <td><%= rastreamento.url %></td>
+                    <td><%= rastreamento.titulo %></td>
+                    <td><%= rastreamento.data_hora.strftime("%d/%m/%Y %H:%M:%S") %></td>
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :javascript do %>
+<% end %>

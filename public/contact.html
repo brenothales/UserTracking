@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<title>Contato RD Station</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-yellow w3-card-2 w3-left-align w3-large">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-padding-large w3-hover-white w3-large w3-yellow" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    </li>
+    <li><a href="/" class="w3-padding-large w3-hover-white">Home</a></li>
+    <li class="w3-hide-small"><a href="contact.html" class="w3-padding-large w3-white ">Contato</a></li>
+    <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">Sobre</a></li>
+    <li class="w3-hide-small">
+      <a href="dev.html" class="w3-padding-large w3-hover-white">Aplicação</a>
+    </li>
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-left-align w3-large w3-black">
+      <li><a class="w3-padding-large" href="/">Início</a></li>
+      <li><a class="w3-padding-large" href="contact.html">Contato</a></li>
+      <li><a class="w3-padding-large" href="about.html">Sobre</a></li>
+      <li><a class="w3-padding-large" href="dev.html">Aplicação</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-yellow w3-center w3-padding-128">
+  <h1 class="w3-margin w3-jumbo"> RD Station</h1>
+  <p class="w3-xlarge">RESULTADOS DIGITAIS</p>
+  <button class="w3-btn w3-padding-16 w3-large w3-margin-top">conheça poder do marketing</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1><span class="w3-border-teal w3-bottombar">Contato</span></h1>      
+      <h5 class="w3-padding-32">Conheça nosso software e serviços de Marketing Digital, o RD Station.</h5>
+
+      <p class="w3-text-grey">Gostaria de enviar alguma sugestão de conteúdo, crítica, ou comentário para a equipe da Resultados Digitais?
+Envie-nos uma mensagem!
+</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-envelope icon w3-padding-64 w3-text-yellow"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"></div>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(-27.554873, -48.497692);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 15,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"></div>
+      <h3>Endereço</h3>
+      <p>Rod. Virgílio Várzea, s/n - Monte Verde, Florianópolis - SC, 88032-000</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Florianópolis, SC</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +55 48 939393939</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  atendimento@rdstation.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="form.asp" target="_blank">
+      <div class="w3-group">      
+        <label class="w3-label">Nome</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-group">      
+        <label class="w3-label">Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-group">      
+        <label class="w3-label">Mensagens</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label class="w3-validate">I Like it!</label>
+      <button type="submit" class="w3-btn w3-right w3-theme">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-handshake-o icon w3-padding-64 w3-text-yellow w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Soluções</h1>
+      <h5 class="w3-padding-32">Nosso conhecimento de referência em Marketing Digital condensado em um curso online de uma forma lógica e didática, a um valor muito acessível.</h5>
+
+      <p class="w3-text-grey">Metodologia própria refinada com centenas de clientes, um blog referência no Brasil e dezenas de eBooks e Webinars para você aprender mais sobre Marketing Digital. <br> 
+      Cliente do RD Station tem um acompanhamento próximo dos nossos consultores e da nossa rede de parceiros, para sua empresa nunca enfrentar os desafios sozinha.</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge"> Junte-se a milhares de pessoas que acompanham e recomendam</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+   <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+   <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+   <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+ </div>
+ <p>Breno Thales <a href="http://github.com/brenothales" target="_blank">github/brenthales</a></p>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/rastreamento.js"></script>
+<script>
+
+
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
